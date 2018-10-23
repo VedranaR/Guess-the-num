@@ -17,14 +17,14 @@ minNum.textContent = min;
 maxNum.textContent = max;
 
 //Play again event listener
-game.addEventListener("mousedown", function(e) {
+game.addEventListener("mousedown", e => {
   if (e.target.className === "play-again") {
     window.location.reload();
   }
 });
 
 //Listen for guess
-guessBtn.addEventListener("click", function() {
+guessBtn.addEventListener("click", () => {
   //Parsing the input value into an integer for use in the function
   let guess = parseInt(guessInput.value);
 
